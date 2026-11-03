@@ -1,0 +1,170 @@
+Hi everyone! I’m Harsh Kumar, a member of GDG on Campus LNMIIT. Welcome
+to this Git and GitHub basics workshop. Let’s get started!
+
+============================================================ GIT BASICS
+— COMMAND CHEAT SHEET
+============================================================
+
+1. CHECK GIT INSTALLATION
+
+git –version Shows the installed Git version.
+
+which git Shows the Git executable path (macOS / Linux / Git Bash).
+
+where git Shows the Git executable path (Windows Command Prompt).
+
+2. INITIAL CONFIGURATION
+
+git config –global user.name “Your Name” Sets the name recorded in your
+commits.
+
+git config –global user.email “you@example.com” Sets the email recorded
+in your commits.
+
+git config –global –list Displays your global Git configuration.
+
+3. TERMINAL NAVIGATION
+
+pwd Shows the current directory.
+
+ls Lists files and folders.
+
+ls -a Lists files, including hidden files.
+
+cd folder-name Moves into a folder.
+
+cd .. Moves one directory up.
+
+mkdir project-name Creates a new folder.
+
+clear Clears the terminal screen.
+
+4. CREATE OR DOWNLOAD A REPOSITORY
+
+git init Initializes a new Git repository in the current folder.
+
+git clone REPOSITORY-URL Downloads a remote repository to your computer.
+
+5. CHECK REPOSITORY STATUS AND CHANGES
+
+git status Shows the current branch and the state of your files.
+
+git diff Shows changes that have not been staged.
+
+git diff –staged Shows changes that have been staged.
+
+git log Displays the commit history.
+
+git log –oneline Displays a compact commit history.
+
+6. STAGE AND COMMIT CHANGES
+
+git add filename Stages one specific file.
+
+git add . Stages changes in the current directory.
+
+git commit -m “Your commit message” Saves staged changes as a commit.
+
+git commit –amend Modifies the most recent commit. Use carefully,
+especially if it has already been shared with others.
+
+7. BRANCHES
+
+git branch Lists local branches.
+
+git branch branch-name Creates a new branch.
+
+git switch branch-name Switches to an existing branch.
+
+git switch -c branch-name Creates a new branch and switches to it.
+
+git branch -d branch-name Deletes a branch that has been merged.
+
+8. MERGING
+
+git merge branch-name Merges the named branch into the branch you are
+currently on.
+
+9. REMOTE REPOSITORIES
+
+git remote -v Lists configured remote repositories and their URLs.
+
+git remote add origin REPOSITORY-URL Adds a remote repository and names
+it “origin”.
+
+git remote remove origin Removes the remote named “origin”.
+
+10. SYNCHRONIZING WITH GITHUB
+
+git push Uploads local commits to the configured remote branch.
+
+git push -u origin branch-name Pushes a branch and sets its upstream
+tracking branch.
+
+git pull Fetches remote changes and integrates them into the current
+branch.
+
+git fetch Downloads remote updates without merging them into your
+current branch.
+
+11. UNDO AND RECOVERY — USE CAREFULLY
+
+git restore filename Discards unstaged changes in a file and restores it
+to the last recorded version.
+
+git restore –staged filename Unstages a file while keeping its changes
+in your working directory.
+
+git show Displays details of a commit.
+
+12. IGNORE UNWANTED FILES
+
+Create a file named .gitignore and add patterns such as:
+
+.env node_modules/ *.log .DS_Store
+
+Note: .gitignore does not automatically stop tracking files that Git
+already tracks.
+
+13. USEFUL GITHUB WORKFLOW
+
+Clone your fork
+
+git clone YOUR-FORK-URL
+
+Move into the repository
+
+cd REPOSITORY-NAME
+
+Create a branch for your work
+
+git switch -c feature/my-change
+
+Check your changes
+
+git status git diff
+
+Stage and commit
+
+git add . git commit -m “Describe your change”
+
+Push your branch to GitHub
+
+git push -u origin feature/my-change
+
+Then open GitHub in your browser and create a Pull Request.
+
+============================================================ QUICK
+REMINDERS ============================================================
+
+• Git is the version-control tool; GitHub hosts repositories and
+provides collaboration features. • A commit saves changes in your local
+repository. • A push sends local commits to a remote repository. • A
+pull brings remote changes into your current branch. • A clone downloads
+a repository to your computer. • A fork creates your own GitHub-side
+copy of another repository. • A branch lets you work on a separate line
+of development. • A Pull Request proposes changes for review and
+merging. • Run “git status” often to understand what is happening. •
+Never commit passwords, API keys, access tokens or private credentials.
+
+Thanks for joining the workshop. Happy learning and happy contributing!
